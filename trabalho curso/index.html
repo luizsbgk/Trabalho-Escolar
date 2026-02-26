@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Como Hackers Invadem Sistemas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="dark">
+    <header id="topo">
+        <nav class="navbar">
+            <div class="logo">Trabalho Proz</div>
+
+            <ul class="menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#metodos">Métodos</a></li>
+                <li><a href="#ferramentas">Ferramentas</a></li>
+                <li><a href="#protecoes">Proteções</a></li>
+                <li><a href="#casos">Casos Reais</a></li>
+            </ul>
+            <button id="toggle-theme" class="toggle-btn">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="hero fade">
+            <div class="hero-content">
+                <h1>Como Hackers Invadem Sistemas</h1>
+                <h2>Conheça as principais técnicas usadas em ataques cibernéticos e como se proteger.</h2>
+                <p class="impacto">
+                    “Entenda como os ataques acontecem e aprenda a se defender com segurança.”
+                </p>
+                <a href="#metodos" class="btn-primario">Começar a aprender</a>
+            </div>
+
+        </section>
+        <section id="metodos" class="secao fade">
+            <h2>Métodos de Invasão</h2>
+            <p class="secao-descricao">
+                Conheça algumas das principais técnicas usadas por atacantes para comprometer sistemas e dados.
+            </p>
+
+            <div class="cards-grid">
+
+                <article class="card">
+                    <div class="card-icone"><i class="fa-solid fa-search"></i></div>
+                    <h3>Scanning</h3>
+                    <p>Etapa inicial em que o invasor analisa portas abertas, serviços ativos e possíveis falhas no sistema.</p>
+                    <p class="exemplo"><strong>Exemplo:</strong> identificar que a porta 22 (SSH) está aberta e vulnerável.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icone"><i class="fa-solid fa-database"></i></div>
+                    <h3>SQL Injection</h3>
+                    <p>Falha que permite inserir comandos maliciosos no banco de dados por meio de entradas não validadas.</p>
+                    <p class="exemplo"><strong>Exemplo:</strong> usar <code>' OR '1'='1</code> para burlar um login.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icone"><i class="fa-solid fa-code"></i></div>
+                    <h3>XSS</h3>
+                    <p>Permite injetar scripts maliciosos em páginas acessadas por outros usuários.</p>
+                    <p class="exemplo"><strong>Exemplo:</strong> comentário contendo <code>alert('XSS')</code>.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icone"><i class="fa-solid fa-user-secret"></i></div>
+                    <h3>Engenharia Social</h3>
+                    <p>Ataques que exploram a confiança ou distração das pessoas para obter informações.</p>
+                    <p class="exemplo"><strong>Exemplo:</strong> alguém fingindo ser suporte técnico pedindo sua senha.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icone"><i class="fa-solid fa-key"></i></div>
+                    <h3>Força Bruta</h3>
+                    <p>Tentativa automática de milhares de combinações até descobrir a senha correta.</p>
+                    <p class="exemplo"><strong>Exemplo:</strong> testar senhas até acessar um e-mail.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icone"><i class="fa-solid fa-envelope-circle-check"></i></div>
+                    <h3>Phishing</h3>
+                    <p>Mensagens falsas que tentam enganar a vítima para roubar dados ou instalar malware.</p>
+                    <p class="exemplo"><strong>Exemplo:</strong> e-mail falso pedindo “confirmação de conta”.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icone"><i class="fa-solid fa-skull-crossbones"></i></div>
+                    <h3>Ransomware</h3>
+                    <p>Malware que bloqueia arquivos e exige pagamento para liberá-los.</p>
+                    <p class="exemplo"><strong>Exemplo:</strong> computador travado exibindo pedido de resgate.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icone"><i class="fa-solid fa-link"></i></div>
+                    <h3>Ataques a APIs</h3>
+                    <p>APIs mal configuradas podem expor dados ou permitir ações indevidas.</p>
+                    <p class="exemplo"><strong>Exemplo:</strong> API retornando informações sem exigir autenticação.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icone"><i class="fa-solid fa-bug"></i></div>
+                    <h3>Vulnerabilidades CVE</h3>
+                    <p>Falhas catalogadas publicamente e exploradas antes que sejam corrigidas.</p>
+                    <p class="exemplo"><strong>Exemplo:</strong> explorar uma CVE recém-divulgada antes do patch.</p>
+                </article>
+
+                <article class="card">
+                    <div class="card-icone"><i class="fa-solid fa-robot"></i></div>
+                    <h3>Exploits Automatizados</h3>
+                    <p>Ferramentas que procuram e exploram falhas automaticamente.</p>
+                    <p class="exemplo"><strong>Exemplo:</strong> script testando vários sites em busca da mesma vulnerabilidade.</p>
+                </article>
+
+            </div>
+        </section>
+        <section id="ferramentas" class="secao secao-alternada fade">
+            <h2>Ferramentas Usadas por Hackers</h2>
+            <p class="secao-descricao">
+                Ferramentas que podem ser usadas tanto para testes de segurança quanto para ataques.
+            </p>
+
+            <div class="tabela-responsiva">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ferramenta</th>
+                            <th>Para que serve</th>
+                            <th>Como ajuda no ataque</th>
+                            <th>Defesa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nmap</td>
+                            <td>Varredura de portas e serviços.</td>
+                            <td>Revela portas abertas e versões vulneráveis.</td>
+                            <td>Fechar portas desnecessárias e manter serviços atualizados.</td>
+                        </tr>
+                        <tr>
+                            <td>Burp Suite</td>
+                            <td>Testes em aplicações web.</td>
+                            <td>Intercepta e altera requisições enviadas ao servidor.</td>
+                            <td>Validação no back-end, HTTPS e uso de WAF.</td>
+                        </tr>
+                        <tr>
+                            <td>Metasploit</td>
+                            <td>Exploração de vulnerabilidades.</td>
+                            <td>Executa exploits de forma automatizada.</td>
+                            <td>Aplicar patches e monitorar CVEs.</td>
+                        </tr>
+                        <tr>
+                            <td>Kali Linux</td>
+                            <td>Sistema para testes de segurança.</td>
+                            <td>Reúne diversas ferramentas de análise e exploração.</td>
+                            <td>Restringir acesso físico e monitorar atividades suspeitas.</td>
+                        </tr>
+                        <tr>
+                            <td>Wireshark</td>
+                            <td>Análise de tráfego de rede.</td>
+                            <td>Captura pacotes que podem conter dados sensíveis.</td>
+                            <td>Usar criptografia (HTTPS, TLS, VPN).</td>
+                        </tr>
+                        <tr>
+                            <td>Hydra</td>
+                            <td>Ataques de força bruta.</td>
+                            <td>Testa senhas rapidamente em vários serviços.</td>
+                            <td>MFA e limitação de tentativas de login.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="protecoes" class="secao fade">
+            <h2>Como Proteger um Sistema</h2>
+
+            <div class="lista-protecao">
+
+                <article class="item-protecao">
+                    <h3>Aplicar updates</h3>
+                    <p>Atualizações corrigem falhas exploradas por atacantes. Manter sistemas atualizados reduz drasticamente o risco de invasões.</p>
+                </article>
+
+                <article class="item-protecao">
+                    <h3>MFA</h3>
+                    <p>Mesmo que a senha seja descoberta, o segundo fator impede o acesso. É uma das defesas mais eficazes.</p>
+                </article>
+
+                <article class="item-protecao">
+                    <h3>Firewalls</h3>
+                    <p>Controlam o tráfego que entra e sai da rede, bloqueando conexões suspeitas e reduzindo a superfície de ataque.</p>
+                </article>
+
+                <article class="item-protecao">
+                    <h3>Senhas fortes</h3>
+                    <p>Senhas longas e complexas dificultam ataques de força bruta. Gerenciadores de senhas ajudam a manter boas práticas.</p>
+                </article>
+
+                <article class="item-protecao">
+                    <h3>Criptografia</h3>
+                    <p>Protege dados mesmo que sejam interceptados. Sem a chave correta, o conteúdo permanece ilegível.</p>
+                </article>
+
+                <article class="item-protecao">
+                    <h3>Limitar portas abertas</h3>
+                    <p>Quanto menos portas expostas, menor a chance de exploração. Apenas serviços essenciais devem estar acessíveis.</p>
+                </article>
+
+                <article class="item-protecao">
+                    <h3>Validações no back-end</h3>
+                    <p>O servidor deve validar tudo o que recebe, evitando ataques como SQL Injection e XSS.</p>
+                </article>
+
+                <article class="item-protecao">
+                    <h3>Prepared Statements</h3>
+                    <p>Impedem que comandos maliciosos sejam executados no banco de dados. São a defesa padrão contra SQL Injection.</p>
+                </article>
+
+                <article class="item-protecao">
+                    <h3>Backup frequente</h3>
+                    <p>Permite recuperar dados após ataques como ransomware. Backups devem ser armazenados em locais seguros.</p>
+                </article>
+
+                <article class="item-protecao">
+                    <h3>Políticas de acesso</h3>
+                    <p>Cada usuário deve ter apenas as permissões necessárias. Isso reduz danos caso uma conta seja comprometida.</p>
+                </article>
+
+            </div>
+        </section>
+        <section id="casos" class="secao secao-alternada fade">
+            <h2>Caso Real: WannaCry (2017)</h2>
+
+            <article class="caso-card">
+                <p><strong>O que aconteceu:</strong> 
+
+O WannaCry foi um ataque global de ransomware que começou em 12 de maio de 2017 e se espalhou de forma explosiva.
+Ele combinava ransomware (que criptografa arquivos e exige resgate) com worm (capaz de se espalhar automaticamente pela rede).
+Em poucas horas:
+- Mais de 200–300 mil computadores foram infectados em 150+ países.
+- O malware exibia uma tela exigindo US$ 300–600 em Bitcoin para liberar os arquivos.
+- O ataque foi atribuído ao grupo Lazarus, ligado à Coreia do Norte (não confirmado oficialmente).
+</p>
+                <p><strong>Vulnerabilidade explorada:</strong> O WannaCry explorou a vulnerabilidade CVE‑2017‑0144, conhecida como EternalBlue, no protocolo SMBv1 do Windows.
+Como funcionava a falha:
+- O SMBv1 permitia compartilhamento de arquivos na rede.
+- A vulnerabilidade permitia execução remota de código, ou seja, o invasor podia controlar o computador sem interação do usuário.
+- O exploit EternalBlue havia sido desenvolvido pela NSA e vazado pelo grupo Shadow Brokers em abril de 2017.
+A Microsoft já havia lançado um patch de correção em março de 2017, dois meses antes do ataque — mas milhões de máquinas continuavam desatualizadas.
+
+</p>
+                <p><strong>Impacto:</strong>  1. Alcance global sem precedentes:
+O ransomware se espalhou em poucos dias para mais de 150 países e infectou mais de 200 mil computadores, atingindo empresas, governos e serviços essenciais.
+2. Paralisação de serviços críticos:
+Hospitais, empresas de telecomunicações, fábricas e órgãos públicos tiveram sistemas bloqueados. Em alguns países, cirurgias foram adiadas, ambulâncias redirecionadas e operações industriais interrompidas.
+3. Exploração de uma falha grave no Windows:
+O ataque explorou a vulnerabilidade EternalBlue, ligada a ferramentas vazadas da NSA, afetando versões desatualizadas do Windows. Isso expôs a fragilidade de sistemas sem atualização e acelerou políticas de patching no mundo todo.
+4. Prejuízos financeiros significativos:
+Os danos econômicos globais foram estimados em centenas de milhões a bilhões de dólares, considerando paralisações, recuperação de sistemas e perdas operacionais.
+5. Mudança de postura em segurança cibernética:
+O WannaCry virou um marco. Empresas e governos passaram a investir mais
+</p>
+                <p><strong>Como poderia ter sido evitado:</strong> O ataque era altamente evitável, pois a correção já existia.
+✅ Atualização do Windows
+A Microsoft lançou o patch MS17‑010 dois meses antes do ataque.
+Máquinas atualizadas não eram vulneráveis.
+✅ Desativação do SMBv1
+O protocolo era antigo e inseguro.
+✅ Backups regulares
+Backups offline teriam reduzido o impacto do ransomware.
+✅ Segmentação de rede
+Redes mal segmentadas permitiram que o worm se espalhasse rapidamente.
+✅ Antivírus e detecção de comportamento
+Muitos antivírus já detectavam o exploit EternalBlue.
+✅ Políticas de segurança mais rígidas
+- Controle de patches
+- Inventário de ativos
+- Monitoramento de tráfego SMB
+</p>
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Trabalho feito por Luis — Como Hackers Invadem Sistemas</p>
+    </footer>
+
+    
+   <script>
+    const btn = document.getElementById("toggle-theme");
+    const body = document.body;
+
+    btn.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        body.classList.toggle("light");
+
+        btn.innerHTML = body.classList.contains("dark")
+            ? '<i class="fa-solid fa-moon"></i>'
+            : '<i class="fa-solid fa-sun"></i>';
+    });
+</script>
+
+<a href="#home" class="btn-topo">
+    <i class="fa-solid fa-arrow-up"></i>
+</a>
+
+</body>
+</html>
